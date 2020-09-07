@@ -27,6 +27,29 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <style type="text/css" data-typed-js-css="true">
+    .typed{
+      opacity: 1;
+    }
+    .typed .typed-cursor--blink{
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+              animation: typedjsBlink 0.7s infinite;
+    }
+    @keyframes typedjsBlink{
+      50% { opacity: 0.0; }
+    }
+    @-webkit-keyframes typedjsBlink{
+      0% { opacity: 1; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
+
   <!-- =======================================================
   * Template Name: Kelly - v2.0.0
   * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
@@ -68,8 +91,16 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-      <h1>WELCOME!</h1>
-      <h2>I'm a backend developer and data engineer from Greater LA.</h2>
+      <h1><span class="typed"></span></h1>
+      <!-- <div id="typed-strings">
+          
+      </div> -->
+      
+
+      <span class="typed" data-typed-items="Software Engineer, Backend Developer, Data Engineer"></span>
+      <span class="typed-cursor"></span>
+      
+      <!-- <h2>Software Engineer</h2> -->
       <a href="about.html" class="btn-about">About Me</a>
     </div>
   </section><!-- End Hero -->
@@ -109,5 +140,6 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 
 </html>
